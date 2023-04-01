@@ -48,11 +48,11 @@ nav .container .leftNav {
 nav .container .rightNav {
   display: none;
 }
-/*#firstSection {
+#firstSection {
   height: calc(100vh - 50px);
   width: 100vw;
   background-color: #F1F1F1;
-  background-image: url(south-tyrol-ge76ca14d3_1280.jpg);
+  background-image: url(./components/images/south-tyrol-ge76ca14d3_1280.jpg);
   background-size: cover;
 }
 #firstSection .shadow {
@@ -80,7 +80,7 @@ nav .container .rightNav {
   background-color: transparent;
   text-align: center;
 }
-#aboutSection {
+/*#aboutSection {
   width: 100vw;
   background-color: #F1F1F1;
 }
@@ -200,13 +200,13 @@ i {
   nav .container .rightNav li {
       display: inline;
       margin-left: 20px;
-  }}
-/*  #aboutSection .container .specialistTop {
+  }
+  #aboutSection .container .specialistTop {
       padding: 104px 0px;
   }
   #aboutSection .container .specialist {
       padding-bottom: 104px;
-  }
+  }}/*
   #offerSection .container .offerTop {
       padding: 104px 0px;
   }
@@ -231,8 +231,8 @@ i {
   }
   nav .container .rightNav #contact {
       cursor: not-allowed;
-  }}
-  /*#firstSection .container .mainTop {
+  }
+  #firstSection .container .mainTop {
       width: 577px;
   }
   #firstSection .container .linkButton {
@@ -241,8 +241,8 @@ i {
   #firstSection .container .linkButton:hover {
       background-color: #FFFFFF;
       color: black;
-  }
-  #aboutSection .container .specialistTop {
+  }}
+  /*#aboutSection .container .specialistTop {
       text-align: left;
   }
   #aboutSection .container .specialist .photo {
