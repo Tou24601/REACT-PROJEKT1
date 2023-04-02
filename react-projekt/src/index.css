@@ -1,3 +1,6 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -80,7 +83,7 @@ nav .container .rightNav {
   background-color: transparent;
   text-align: center;
 }
-/*#aboutSection {
+#aboutSection {
   width: 100vw;
   background-color: #F1F1F1;
 }
@@ -105,13 +108,13 @@ nav .container .rightNav {
   background-size: cover;
   background-position: center;
   margin-bottom: 42px;
-}
+}/*
 #aboutSection .container #specialistFirst {
   background-image: url(pexels-andrea-piacquadio-3769021.jpg);
 }
 #aboutSection .container #specialistSecond {
   background-image: url(pexels-edmond-dantès-4347368.jpg);
-}
+}*/
 #aboutSection .container .specialist .specialistText {
   text-align: justify;
 }
@@ -152,7 +155,7 @@ nav .container .rightNav {
 #offerSection .container .serviceBox .service .serviceName {
   font-size: 24px;
 }
-#offerSection .container .serviceBox .firstService::before {
+#offerSection .container .serviceBox .newService::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -178,7 +181,7 @@ footer .footer {
   text-align: justify; 
   line-height: 21px;
 }
-i {
+.logo {
   font-size: 31px;
   color: #FFFFFF;
   margin-left: 18px;
@@ -191,7 +194,7 @@ i {
       width: 198px;
       height: 193.78px;
   }
-}*/
+}
 @media screen and (min-width: 768px) {
   nav .container .rightNav {
       display: initial;
@@ -206,7 +209,7 @@ i {
   }
   #aboutSection .container .specialist {
       padding-bottom: 104px;
-  }}/*
+  }
   #offerSection .container .offerTop {
       padding: 104px 0px;
   }
@@ -223,7 +226,7 @@ i {
       align-items: center;
       padding: 0px;
   }
-}*/
+}
 @media screen and (min-width: 1200px) {
   .container {
       width: 960px;
@@ -242,7 +245,7 @@ i {
       background-color: #FFFFFF;
       color: black;
   }}
-  /*#aboutSection .container .specialistTop {
+  #aboutSection .container .specialistTop {
       text-align: left;
   }
   #aboutSection .container .specialist .photo {
@@ -280,4 +283,3 @@ i {
   #offerSection .container .serviceBox .service:hover {
       transform: scale(1.05);
   }
-}*/
