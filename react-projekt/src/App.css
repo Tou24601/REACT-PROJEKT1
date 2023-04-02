@@ -1,40 +1,265 @@
-@import-normalize
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-.App {
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.container {
+  width: 94vw;
+  margin: 0 auto;
+}
+nav {
+  width: 100vw;
+  height: 50px;
+  background-color: #4E4E4E;
+}
+nav .nav {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+a:link {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+a:visited {
+  color: #F1F1F1;
+}
+nav .container .leftNav {
+  font-weight: 700; 
+}
+nav .container .rightNav {
+  display: none;
+}
+#firstSection {
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background-color: #F1F1F1;
+  background-image: url(./assets/south-tyrol-ge76ca14d3_1280.jpg);
+  background-size: cover;
+}
+#firstSection .shadow {
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#firstSection .firstSectionElements {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  justify-content: center;
+}
+#firstSection .container .mainTop {
+  line-height: 40px;
+  font-size: 36px;
+  font-weight: 700;
+}
+#firstSection .container .linkButton {
+  width: 164px; 
+  padding: 10px;
+  line-height: 20px;
+  border: 3px solid #FFFFFF;
+  background-color: transparent;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#aboutSection {
+  width: 100vw;
+  background-color: #F1F1F1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#aboutSection .container .specialistTop {
+  text-align: center;
+  font-size: 36px;
+  color: #152D41;
+  padding: 34px 50px 50.5px 50px;
+  font-weight: 700;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#aboutSection .container .specialist {
+  color: #000000;
+  padding-bottom: 54px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#aboutSection .container .specialist .photo {
+  width: 197px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 42px;
+}
+#aboutSection .container .specialist .specialistText {
+  text-align: justify;
+}
+#aboutSection .container .specialist .specialistText .specialistName {
+  font-weight: 700;
+  padding-bottom: 21.09px;
+}
+#offerSection {
+  width: 100vw;
+  background-color: #405D78;
+}
+#offerSection .container .offerTop {
+  font-size: 26px;
+  padding: 76px 0px 59.4px 0px;
+  font-weight: 700;
+  text-align: center;
+}
+#offerSection .container .serviceBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35.94px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 45.19px;
 }
-
-.App-link {
-  color: #61dafb;
+#offerSection .container .serviceBox .service {
+  width: 338.88px;
+  height: 331.66px;
+  background-color: #F1F1F1;
+  color: #000000;
+  box-shadow: 0px 15px 10px -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#offerSection .container .serviceBox .service .serviceName {
+  font-size: 24px;
+}
+#offerSection .container .serviceBox .newService::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  width: 22px;
+  aspect-ratio: 1 / 1;
+  background-color: #E07A64;
+}
+footer {
+  width: 100vw;
+  background-color: #4E4E4E;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 38px 0px 42px 0px;
+}
+#footerText {
+  font-weight: 700;
+  text-align: justify; 
+  line-height: 21px;
+}
+.logo {
+  font-size: 31px;
+  color: #FFFFFF;
+  margin-left: 18px;
+}
+@media screen and (min-width: 576px) {
+  #offerSection .container .serviceBox {
+      gap: 63px;
   }
-  to {
-    transform: rotate(360deg);
+  #offerSection .container .serviceBox .service {
+      width: 198px;
+      height: 193.78px;
   }
 }
+@media screen and (min-width: 768px) {
+  nav .container .rightNav {
+      display: initial;
+      list-style-type: none;
+  }
+  nav .container .rightNav li {
+      display: inline;
+      margin-left: 20px;
+  }
+  #aboutSection .container .specialistTop {
+      padding: 104px 0px;
+  }
+  #aboutSection .container .specialist {
+      padding-bottom: 104px;
+  }
+  #offerSection .container .offerTop {
+      padding: 104px 0px;
+  }
+  #offerSection .container .serviceBox {
+      padding-bottom: 104px;
+  }
+  footer {
+      height: 50px;
+  }
+  footer .footer {
+      height: 50px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+      width: 960px;
+      margin: 0 auto;
+  }
+  nav .container .rightNav #contact {
+      cursor: not-allowed;
+  }
+  #firstSection .container .mainTop {
+      width: 577px;
+  }
+  #firstSection .container .linkButton {
+      transition-duration: 1s;
+  }
+  #firstSection .container .linkButton:hover {
+      background-color: #FFFFFF;
+      color: black;
+  }}
+  #aboutSection .container .specialistTop {
+      text-align: left;
+  }
+  #aboutSection .container .specialist .photo {
+      margin-bottom: 0px;
+  }
+  #aboutSection .container .specialist .specialistText {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: unset;
+  }
+  #aboutSection .container .specialist .specialistText .specialistName {
+      padding-bottom: 0px;
+  }
+  #aboutSection .container .specialist:nth-of-type(odd) {
+      display: flex;
+      flex-direction: row;
+      gap: 44px;
+      text-align: left;
+  }
+  #aboutSection .container .specialist:nth-of-type(even) {
+      text-align: right;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 44px;
+  }
+  #offerSection .container .offerTop {
+      text-align: left;
+      font-size: 36px;
+  }
+  #offerSection .container .serviceBox .service {
+      transition-duration: 0.5s;
+  }
+  #offerSection .container .serviceBox .service:hover {
+      transform: scale(1.05);
+  }

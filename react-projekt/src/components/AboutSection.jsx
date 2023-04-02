@@ -1,35 +1,21 @@
 import React from "react";
-import "../index.css";
+import "../reset.css";
+import "../App.css";
+import { employeesList } from "../data/Employees";
+import Employee from "./Employee";
 
 const AboutSection = () => {
-  const specialistsList = [
-    {
-      fname: "Anna",
-      lname: "Kowalska",
-      position: "CEO",
-      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      photo: "./images/pexels-andrea-piacquadio-3769021.jpg"
-    },
-    {
-      fname: "Zofia",
-      lname: "Nowak",
-      position: "PR",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ea enim, natus illo ad necessitatibus.",
-      photo: "./images/pexels-edmond-dantès-4347368.jpg"
-    },
-  ];
-  const newSpecialistList = specialistsList.map((specialist, key) => (
+  const newEmployeesList = employeesList.map((employee, key) => (
     <li className="specialist" key={key}>
       <div
         className="photo"
-        style={{ backroundImage: `url(${specialist.photo})` }}
+        style={{ backgroundImage: `url(${employee.photo})` }}
       ></div>
       <div className="specialistText">
         <h4 className="specialistName">
-          {specialist.fname} {specialist.lname} ({specialist.position})
+          {employee.fname} {employee.lname} ({employee.position})
         </h4>
-        <p>{specialist.description}</p>
+        <p>{employee.description}</p>
       </div>
     </li>
   ));
@@ -37,7 +23,7 @@ const AboutSection = () => {
     <section id="aboutSection">
       <div className="container aboutSectionElements">
         <h3 className="specialistTop">Nasi specjaliści</h3>
-        <ul>{newSpecialistList}</ul>
+        <ul>{newEmployeesList}</ul>
       </div>
     </section>
   );

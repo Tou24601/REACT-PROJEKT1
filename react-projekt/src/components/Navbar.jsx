@@ -1,29 +1,29 @@
 import React from "react";
-import "../index.css";
+import "../App.css";
 
 const Navbar = () => {
   return (
     <nav>
-        <div className="container nav">
+      <div className="container nav">
         <div className="leftNav">moja firma</div>
         <ul className="rightNav">
-            <li>
+          <li>
             <a href="#aboutSection" className="rightNavElement" id="about">
-                o nas
+              o nas
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#offerSection" className="rightNavElement" id="offer">
-                oferta
+              oferta
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#" className="rightNavElement" id="contact">
-                kontakt
+              kontakt
             </a>
-            </li>
+          </li>
         </ul>
-        </div>
+      </div>
     </nav>
   );
 };

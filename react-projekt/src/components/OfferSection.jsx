@@ -1,21 +1,14 @@
 import React from "react";
-import "../index.css";
+import "../App.css";
 import OfferBox from "./OfferBox";
+import { listOfServices } from "../data/Services";
 
 const OfferSection = () => {
-  const listOfServices = [
-    { name: "Usługa 1" },
-    { name: "Usługa 2" },
-    { name: "Usługa 3" },
-    { name: "Usługa 4" },
-    { name: "Usługa 5" },
-    { name: "Usługa 6" },
-  ];
   const newList = listOfServices.map((service, key) => (
     <OfferBox
       serviceName={service.name}
       key={key}
-      isNew={key === 0 ? true : false}
+      isNew={service.isNew ? true : false}
     />
   ));
   return (
