@@ -4,7 +4,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import "../App.css";
 
-const Footer = ({}) => {
+const Footer = () => {
   return (
     <footer>
       <div className="container footer">
@@ -12,12 +12,8 @@ const Footer = ({}) => {
           Nazwa firmy – wszelkie prawa zastrzeżone, 2019
         </div>
         <div className="logos">
-          <a href="#">
-            <FontAwesomeIcon icon={faInstagram} className="logo" />
-          </a>
-          <a href="#">
-            <FontAwesomeIcon icon={faFacebookSquare} className="logo" />
-          </a>
+          <FontAwesomeIcon icon={faInstagram} className="logo" />
+          <FontAwesomeIcon icon={faFacebookSquare} className="logo" />
         </div>
       </div>
     </footer>

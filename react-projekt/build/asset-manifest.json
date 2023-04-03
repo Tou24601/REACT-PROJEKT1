@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.c7d87ec8.css",
-    "main.js": "/static/js/main.96efc88d.js",
+    "main.js": "/static/js/main.fb674801.js",
     "static/js/787.c97c928a.chunk.js": "/static/js/787.c97c928a.chunk.js",
     "static/media/south-tyrol-ge76ca14d3_1280.jpg": "/static/media/south-tyrol-ge76ca14d3_1280.16ff63ca9a140a7676c5.jpg",
     "static/media/pexels-edmond-dantès-4347368.jpg": "/static/media/pexels-edmond-dantès-4347368.2264ee3d28f59f99c953.jpg",
     "static/media/pexels-andrea-piacquadio-3769021.jpg": "/static/media/pexels-andrea-piacquadio-3769021.62061f698878a010e844.jpg",
     "index.html": "/index.html",
     "main.c7d87ec8.css.map": "/static/css/main.c7d87ec8.css.map",
-    "main.96efc88d.js.map": "/static/js/main.96efc88d.js.map",
+    "main.fb674801.js.map": "/static/js/main.fb674801.js.map",
     "787.c97c928a.chunk.js.map": "/static/js/787.c97c928a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7d87ec8.css",
-    "static/js/main.96efc88d.js"
+    "static/js/main.fb674801.js"
   ]
 }

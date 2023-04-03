@@ -18,9 +18,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="rightNavElement" id="contact">
+            <div className="rightNavElement" id="contact">
               kontakt
-            </a>
+            </div>
           </li>
         </ul>
       </div>
