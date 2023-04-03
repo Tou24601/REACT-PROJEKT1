@@ -17,7 +17,7 @@ const AboutSection = () => {
     <section id="aboutSection">
       <div className="container aboutSectionElements">
         <h3 className="specialistTop">Nasi specjaliści</h3>
-        <ul>{newEmployeesList}</ul>
+        <div>{newEmployeesList}</div>
       </div>
     </section>
   );

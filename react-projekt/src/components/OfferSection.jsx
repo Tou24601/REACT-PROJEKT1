@@ -4,7 +4,7 @@ import OfferBox from "./OfferBox";
 import { listOfServices } from "../data/Services";
 
 const OfferSection = () => {
-  const newList = listOfServices.map((service, key) => (
+  const newListOfServices = listOfServices.map((service, key) => (
     <OfferBox
       serviceName={service.name}
       key={key}
@@ -15,7 +15,7 @@ const OfferSection = () => {
     <section id="offerSection">
       <div className="container offerSectionElements">
         <h4 className="offerTop">Czym zajmuje się nasza firma?</h4>
-        <ul className="serviceBox">{newList}</ul>
+        <div className="serviceBox">{newListOfServices}</div>
       </div>
     </section>
   );
