@@ -6,18 +6,12 @@ import Employee from "./Employee";
 
 const AboutSection = () => {
   const newEmployeesList = employeesList.map((employee, key) => (
-    <li className="specialist" key={key}>
-      <div
-        className="photo"
-        style={{ backgroundImage: `url(${employee.photo})` }}
-      ></div>
-      <div className="specialistText">
-        <h4 className="specialistName">
-          {employee.fname} {employee.lname} ({employee.position})
-        </h4>
-        <p>{employee.description}</p>
-      </div>
-    </li>
+    <Employee
+      key={key}
+      photo={employee.photo}
+      employeeData={`${employee.fname} ${employee.lname} (${employee.position})`}
+      employeeDescription={employee.description}
+    />
   ));
   return (
     <section id="aboutSection">
