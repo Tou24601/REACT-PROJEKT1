@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .container {
   width: 94vw;
@@ -15,7 +15,7 @@ body {
 nav {
   width: 100vw;
   height: 50px;
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
 }
 nav .nav {
   height: 50px;
@@ -26,13 +26,13 @@ nav .nav {
 }
 a:link {
   text-decoration: none;
-  color: #F1F1F1;
+  color: #f1f1f1;
 }
 a:visited {
-  color: #F1F1F1;
+  color: #f1f1f1;
 }
 nav .container .leftNav {
-  font-weight: 700; 
+  font-weight: 700;
 }
 nav .container .rightNav {
   display: none;
@@ -40,7 +40,7 @@ nav .container .rightNav {
 #firstSection {
   height: calc(100vh - 50px);
   width: 100vw;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   background-image: url(./assets/south-tyrol-ge76ca14d3_1280.jpg);
   background-size: cover;
 }
@@ -62,21 +62,21 @@ nav .container .rightNav {
   font-weight: 700;
 }
 #firstSection .container .linkButton {
-  width: 164px; 
+  width: 164px;
   padding: 10px;
   line-height: 20px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   background-color: transparent;
   text-align: center;
 }
 #aboutSection {
   width: 100vw;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 #aboutSection .container .specialistTop {
   text-align: center;
   font-size: 36px;
-  color: #152D41;
+  color: #152d41;
   padding: 34px 50px 50.5px 50px;
   font-weight: 700;
 }
@@ -104,7 +104,7 @@ nav .container .rightNav {
 }
 #offerSection {
   width: 100vw;
-  background-color: #405D78;
+  background-color: #405d78;
 }
 #offerSection .container .offerTop {
   font-size: 26px;
@@ -123,7 +123,7 @@ nav .container .rightNav {
 #offerSection .container .serviceBox .service {
   width: 338.88px;
   height: 331.66px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   color: #000000;
   box-shadow: 0px 15px 10px -15px;
   display: flex;
@@ -143,11 +143,11 @@ nav .container .rightNav {
   border-radius: 50%;
   width: 22px;
   aspect-ratio: 1 / 1;
-  background-color: #E07A64;
+  background-color: #e07a64;
 }
 footer {
   width: 100vw;
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
 }
 footer .footer {
   display: flex;
@@ -158,108 +158,109 @@ footer .footer {
 }
 #footerText {
   font-weight: 700;
-  text-align: justify; 
+  text-align: justify;
   line-height: 21px;
 }
 .logo {
   font-size: 31px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 18px;
 }
 @media screen and (min-width: 576px) {
   #offerSection .container .serviceBox {
-      gap: 63px;
+    gap: 63px;
   }
   #offerSection .container .serviceBox .service {
-      width: 198px;
-      height: 193.78px;
+    width: 198px;
+    height: 193.78px;
   }
 }
 @media screen and (min-width: 768px) {
   nav .container .rightNav {
-      display: initial;
-      list-style-type: none;
+    display: initial;
+    list-style-type: none;
   }
   nav .container .rightNav li {
-      display: inline;
-      margin-left: 20px;
+    display: inline;
+    margin-left: 20px;
   }
   #aboutSection .container .specialistTop {
-      padding: 104px 0px;
+    padding: 104px 0px;
   }
   #aboutSection .container .specialist {
-      padding-bottom: 104px;
+    padding-bottom: 104px;
   }
   #offerSection .container .offerTop {
-      padding: 104px 0px;
+    padding: 104px 0px;
   }
   #offerSection .container .serviceBox {
-      padding-bottom: 104px;
+    padding-bottom: 104px;
   }
   footer {
-      height: 50px;
+    height: 50px;
   }
   footer .footer {
-      height: 50px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-      width: 960px;
-      margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
   }
   nav .container .rightNav #contact {
-      cursor: not-allowed;
+    cursor: not-allowed;
   }
   #firstSection .container .mainTop {
-      width: 577px;
+    width: 577px;
   }
   #firstSection .container .linkButton {
-      transition-duration: 1s;
+    transition-duration: 1s;
   }
   #firstSection .container .linkButton:hover {
-      background-color: #FFFFFF;
-      color: black;
-  }}
+    background-color: #ffffff;
+    color: black;
+  }
   #aboutSection .container .specialistTop {
-      text-align: left;
+    text-align: left;
   }
   #aboutSection .container .specialist .photo {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   #aboutSection .container .specialist .specialistText {
-      width: 50vw;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      text-align: unset;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: unset;
   }
   #aboutSection .container .specialist .specialistText .specialistName {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
   #aboutSection .container .specialist:nth-of-type(odd) {
-      display: flex;
-      flex-direction: row;
-      gap: 44px;
-      text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    text-align: left;
   }
   #aboutSection .container .specialist:nth-of-type(even) {
-      text-align: right;
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 44px;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 44px;
   }
   #offerSection .container .offerTop {
-      text-align: left;
-      font-size: 36px;
+    text-align: left;
+    font-size: 36px;
   }
   #offerSection .container .serviceBox .service {
-      transition-duration: 0.5s;
+    transition-duration: 0.5s;
   }
   #offerSection .container .serviceBox .service:hover {
-      transform: scale(1.05);
+    transform: scale(1.05);
   }
+}
