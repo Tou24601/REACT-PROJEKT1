@@ -18,9 +18,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <div className="rightNavElement" id="contact">
+            <a href="#footer" className="rightNavElement" id="contact">
               kontakt
-            </div>
+            </a>
           </li>
         </ul>
       </div>
