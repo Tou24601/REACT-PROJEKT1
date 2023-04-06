@@ -145,6 +145,12 @@ nav .container .rightNav {
   aspect-ratio: 1 / 1;
   background-color: #e07a64;
 }
+#offerSection .container .serviceBox p {
+  display: none
+}
+#offerSection .container .serviceBox .newService p {
+  display: initial
+}
 footer {
   width: 100vw;
   background-color: #4e4e4e;

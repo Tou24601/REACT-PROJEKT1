@@ -1,6 +1,3 @@
-import React from "react";
-import "../reset.css";
-import "../App.css";
 import { employeesList } from "../data/Employees";
 import Employee from "./Employee";
 

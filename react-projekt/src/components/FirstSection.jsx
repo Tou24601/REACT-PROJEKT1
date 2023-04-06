@@ -1,6 +1,3 @@
-import React from "react";
-import "../App.css";
-
 const FirstSection = () => {
   return (
     <section id="firstSection">
